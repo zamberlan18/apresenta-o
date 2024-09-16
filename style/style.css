@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* essa fonte foi importada do google fonts e sera incluida logo abaixo */
+
+:root{
+    --cor--prin: #2c3639;
+    --cor--secu: #dcd7c9;
+    --cor--ter: #a27b5c;
+    --cor--houver: #3f4e4f;
+
+    --font--pri: "Krona One", sans-serif;
+    --font--sec:"montserrat" , sans-serif;
+}
+/* root é uma variavel serve para nao repetir muito o codgo  */
+ 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor--prin);
+    /* background quer dizer cor do fundo */
+    color: var(--cor--secu);
+    /* color que dizer a cor da letra  */
+    /* height quer dizer que todo conteudo seja visivel */
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--font--sec);
+    font-size: 21px;
+    font-weight: 400px;
+    color: var(--cor--ter);
+    text-decoration: none;
+}
+
+
+.titulo-destaque {
+    color: var(--cor--ter);
+}
+/* essa é a class que da a cor as letras coloridas que sao chamadas
+no html */
+.apresentacao{
+    /* margin: 8% 10%; */
+    /* margin quer dizer a % que vai ser feita uma margem ou seja o espaço que ficara nos 4 cantos  */
+    padding: 5% 10% 15% 15%;
+    /*  */
+    display: flex;
+    align-items: center; 
+    /* vai alinhar os elemntos no centro */
+    justify-content: space-between; 
+    /* vai espaçar os elemntos  */
+}
+
+.apresentacao__conteudo {
+    width: 400px;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    /* width serve para limitar ate onde vai ou seja tendfo um pixel dde
+    400 linha vai ate um determinado pontoi
+    apos isso pula para prooxima linha , como se tivesse uma barreira que indica
+    que so pode ir ate la 
+    display flax vai alinha em blocos
+    flex direction é para alinha em colunas 
+    recuros gap serve para espaçar a altura de cada item */
+}
+
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: var(--font--pri);
+}
+/* font family é a importação das fontes */
+
+.apresentacao__conteudo__texto{
+    font-size: 24px;
+    font-family: var(--font--sec); 
+}
+/* fontsize serve para reguljar o tamanho das letras  */
+
+.apresentacao__link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    
+}
+/* o display flex fica responsavel pelo espaçamento 
+flex direction serve para alinhar a div em colunas
+align itens para alinhar os botoes no centro
+gap fica resposavel por espaçar  h2 e os 2 a(ancoras) deixando um espaço no meio de cada iten*/
+
+.apresentacao__link__subtitulo{
+    font-family: var(--font--pri);
+    font-weight: 400;
+    font-size: 15px;
+    
+}
+/* colocamos uma font diferenten no h2(suibtitulo) com o font family
+em seguidas usamos o font weight para colocar o peso da fonte ou seja a frossura
+font size para escolher o tamanho da fonte  */
+
+.apresentacao__links{
+    /* background-color: #22D4FD; na nova parte do projeto n vamos usar essa cor*/
+    border: 2px solid var(--cor--ter);
+    width: 220px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    padding:  3% 3% 3% 0%;
+    text-decoration: none;
+    color: var(--cor--secu);
+    font-family: var(--font--sec); 
+    content: normal;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+     
+}
+/* width quer dizer a borda ao lado da escrita do botão
+texte align serve para alinhar o texto no meio
+border radius serve para deixar a borda do botão resdondo
+font size quer dizer o tamanho da fontea
+padding e o espaço na horizontal do botao primeiro px horizontal segunddo
+vertical
+text decoration none é para anular a decoração do texto ou seja
+para sumir a linha que tinha embaixo da escrita do botao
+font weight para aumentar a espeçura da letra(ficar mais cheia)
+ border foi para escolher o tamanmho da nossa borda que foi 2 pixels ja o solid serve para indixcar que nossa borda e solida oui seja ela e inteira uma so risca e em seguida fgoi determida a cor  */
+
+ .stilo{
+    width: 25px;
+    height: 25.5px;
+    margin: 0px 15px;
+   
+ }
+ /* essa variavel foi criado para dar o tamanhio na imagen
+ do botao
+ usamois width para autura e height para largura  */
+ 
+.apresentacao__links:hover{
+    background-color: var(--cor--houver);
+}
+/* a tag houver serve para quando passr o cursor nos botoes
+ele mudar a cor */
+
+.rodape{
+    color: var(--cor--prin);
+    background-color: var(--cor--ter);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--font--sec);
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+   
